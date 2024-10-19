@@ -2,13 +2,14 @@ import React from 'react';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell, faEnvelope, faUser } from '@fortawesome/free-solid-svg-icons';
+import logo from '../assets/images/vidi-logo.png';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
         <div className="navbar-logo">
-          <img src="./public/images/vidi-logo.png" alt="Logo" className="logo-image" /> {/* Ensure this path is correct */}
+          <img src={logo} alt="Logo" className="logo-image" /> 
         </div>
 
         <div className="navbar-search">
