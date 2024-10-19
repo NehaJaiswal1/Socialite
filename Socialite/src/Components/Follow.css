@@ -9,6 +9,7 @@ body {
   height: auto; /* Change height to auto to fit content */
   margin: 2px; /* Margin around the box */
   padding: 10px; /* Optional: padding inside the box */
+ 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: slight shadow for depth */
 }
 

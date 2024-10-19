@@ -10,13 +10,12 @@ const App = () => {
     <div>
       <Navbar />
       
-      <LeftNav />
+      <div>
+       <LeftNav />
+      </div>
 
       <div className="main-content"> {/* Flex container for layout */}
-        <div className="main-body">
-          {/* Your main content here */}
-          
-        </div>
+        
         <div className="sidebar"> {/* Sidebar on the right */}
           <Follow /> {/* Render the "Follow" component */}
         </div>
