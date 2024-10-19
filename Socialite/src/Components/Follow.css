@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif; /* Change the font if desired */
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .box {
+    width: 340px;
+    height: auto; /* Change height to auto to fit content */
+    margin: 2px; /* Margin around the box */
+    border: 1px solid #ccc; /* Optional: border around the box */
+    padding: 10px; /* Optional: padding inside the box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: slight shadow for depth */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically centered */
+  }
+  
+  .headline {
+    font-size: 24px;
+    margin: 0; /* Remove default margin */
+  }
+  
+  .see-all {
+    font-size: 16px;
+    color: #3b82f6; /* Color of the clickable link */
+    text-decoration: none; /* Remove underline from link */
+  }
+  
+  .see-all:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center; /* Center icon and text vertically */
+    margin: 10px 0; /* Margin for spacing */
+  }
+  
+  .user-icon {
+    width: 50px; /* Width of the circular image */
+    height: 50px; /* Height of the circular image */
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 10px; /* Space between the icon and text */
+  }
+  
+  .user-details {
+    display: flex;
+    flex-direction: column; /* Stack name and following vertically */
+    margin-right: auto; /* Use auto margin to push the button to the right */
+  }
+  
+  .user-name {
+  font-weight:bold;
+    font-size: 20px; /* Font size for user name */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .following {
+    font-size: 10px; /* Font size for following count */
+    margin: 0; /* Remove default margin */
+    color: gray; /* Optional: color for following text */
+  }
+  
+  .follow-button {
+    background-color:#334150; /* Background color of the button */
+    padding: 8px 16px; /* Padding for the button */
+    color: white; /* Text color of the button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 10px; /* Space between the details and the button */
+  }
+  
+  .follow-button:hover {
+    background-color: darkblue; /* Darken button on hover */
+  }
+  

@@ -1,0 +1,136 @@
+/* General styles for navbar */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 90%; /* Ensure the body is full width */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    width: 100vw; /* Ensure full viewport width */
+    position: fixed; /* Make the navbar fixed at the top */
+    top: 0;
+    left: 0;
+    box-sizing: border-box; /* Include padding in the total width */
+    z-index: 1000; /* Ensure the navbar stays on top */
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    margin-right: 50px; /* Adds space between logo and search bar */
+}
+
+.navbar-search {
+    flex: 1; /* Allow search bar to take available space */
+    display: flex;
+    justify-content: flex-start; /* Aligns search bar after the logo */
+}
+
+.navbar-search input {
+    width: 600px; /* Adjust width to 600px as needed */
+    padding: 10px; /* Increased padding for better appearance */
+    border-radius: 8px;
+    border: none;
+}
+
+.logo-image {
+    max-width: 150px; /* Adjust the size of the logo */
+    height: auto;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+}
+
+/* Specific spacing between notification, message, and profile icons */
+.icon {
+    font-size: 1.5rem;  /* Adjust icon size */
+    color: white;
+    cursor: pointer;
+    border: 2px solid white; /* Outer border for icons */
+    border-radius: 50%; /* Make icons circular */
+    padding: 10px; /* Space inside the border */
+    transition: background-color 0.3s; /* Smooth background color change on hover */
+}
+
+/* Space between each icon */
+.icon:not(:last-child) {
+    margin-right: 25px; /* Adjust space between icons */
+}
+
+/* Adjust the margin-right for the profile icon */
+.icon:last-child {
+    margin-right: 50px; /* Profile icon margin-right set to 20px for more space */
+}
+
+.icon:hover {
+    color: #ddd; /* Change color on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Change background on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+
+/* Tablet and smaller screens (up to 768px) */
+@media (max-width: 768px) {
+    .navbar-search input {
+        width: 70%; /* Make the search bar smaller for tablet */
+    }
+
+    .navbar-logo {
+        margin-right: 20px; /* Reduce space between logo and search bar */
+    }
+
+    .logo-image {
+        max-width: 120px; /* Scale down logo size */
+    }
+
+    .icon {
+        font-size: 1.3rem; /* Slightly reduce icon size */
+    }
+}
+
+/* Mobile screens (up to 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 10px;
+    }
+
+    .navbar-left {
+        flex-direction: column; /* Align logo and search vertically */
+        width: 100%;
+        margin-bottom: 10px; /* Space between logo and search */
+    }
+
+    .navbar-search input {
+        width: 90%; /* Full width search bar on mobile */
+        padding: 10px;
+    }
+
+    .navbar-icons {
+        margin-top: 10px; /* Space between search bar and icons */
+    }
+
+    .logo-image {
+        max-width: 100px; /* Further reduce logo size */
+    }
+
+    .icon {
+        font-size: 1.2rem; /* Smaller icon size for mobile */
+    }
+
+    /* Ensure the profile icon still has space on mobile */
+    .icon:last-child {
+        margin-right: 20px; /* Add margin for mobile */
+    }
+}
