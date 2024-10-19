@@ -1,5 +1,10 @@
 import React from 'react';
-import './Follow.css'; // Ensure you have a CSS file to style your component
+import './Follow.css'; // Ensure you have a CSS file to style your component\
+import a1 from '../assets/images/avatar1.jpg';
+import a2 from '../../src/assets/images/avatar2.jpg';
+import a3 from '../../src/assets/images/avatar3.jpg';
+import a4 from '../../src/assets/images/avatar4.jpg';
+import a5 from '../../src/assets/images/avatar5.jpg';
 
 const UserProfile = ({ user }) => {
     return (
@@ -16,17 +21,17 @@ const UserProfile = ({ user }) => {
 
 const PeopleYouMayKnow = () => {
     const users = [
-        { id: 1, name: 'John Doe', following: '120k', icon: 'https://via.placeholder.com/50' },
-        { id: 2, name: 'Jane Smith', following: '95k', icon: 'https://via.placeholder.com/50' },
-        { id: 3, name: 'Alice Johnson', following: '200k', icon: 'https://via.placeholder.com/50' },
-        { id: 4, name: 'Bob Brown', following: '150k', icon: 'https://via.placeholder.com/50' },
-        { id: 5, name: 'Charlie White', following: '80k', icon: 'https://via.placeholder.com/50' },
+        { id: 1, name: 'John Doe', following: '120k', icon: a1 },
+        { id: 2, name: 'Jane Smith', following: '95k', icon: a2 },
+        { id: 3, name: 'Alice Johnson', following: '200k', icon: a3 },
+        { id: 4, name: 'Bob Brown', following: '150k', icon: a4 },
+        { id: 5, name: 'Charlie White', following: '80k', icon: a5 },
     ];
 
     return (
         <div className="box">
             <div className="container">
-                <h2 className="headline">People You May Know</h2>
+                <h4 className="headline">People You May Know</h4>
                 <a href="#" className="see-all">See All</a>
             </div>
 

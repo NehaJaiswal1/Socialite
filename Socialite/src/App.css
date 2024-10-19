@@ -5,15 +5,53 @@
   text-align: center;
 }
 
+/* Ensure body has no padding or margin */
+body {
+  margin: 0;
+  padding: 0;
+  position: relative; /* Ensure that sidebar can be positioned relative to the body */
+}
+
+/* Flex container for the main content and sidebar */
+.main-content {
+  display: flex; /* Flexbox for layout */
+  justify-content: center; /* Center the main content */
+  padding-bottom: 500px; /* Ensure content appears below the navbar */
+  padding-left: 1200px; /* Space for sidebar on larger screens */
+
+  position: relative; /* Allow absolute positioning of the sidebar */
+  transition: padding 0.3s ease; /* Smooth transition when resizing */
+}
+
+/* Main body content should take up full width minus the sidebar */
+.main-body {
+  flex: 1; /* Make main content take up the remaining space */
+  padding-right: 20px; /* Space between main content and sidebar */
+  max-width: 900px; /* Ensure the main body content doesn’t stretch too wide */
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 340px; /* Fixed width for the sidebar */
+  height: auto; /* Adjust height to fit content */
+  position: absolute; /* Stick the sidebar to the right */
+  right: 0; /* Sidebar at the rightmost side */
+  top: 20px; /* Adjust top according to the navbar's height */
+  background-color: #4c4c4c; /* Set sidebar background color to gray */
+  border: none; /* Remove border */
+}
+/* Logo styling */
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -39,4 +77,55 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Responsive Adjustments */
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+  .main-content {
+    padding-left: 800px; /* Reduce padding for smaller screens */
+  }
+  
+  .sidebar {
+    width: 280px; /* Reduce sidebar width */
+  }
+}
+
+/* For screens smaller than 992px (tablet size) */
+@media (max-width: 992px) {
+  .main-content {
+    padding-left: 600px; /* Further reduce padding */
+  }
+  
+  .sidebar {
+    width: 240px; /* Reduce sidebar width */
+  }
+}
+
+/* For screens smaller than 768px (small tablets and mobile landscape) */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* Stack main content and sidebar vertically */
+    padding-left: 0; /* No left padding */
+    padding-right: 0; /* No right padding */
+  }
+  
+  .sidebar {
+    position: relative; /* Sidebar will now stack below main content */
+    width: 100%; /* Full width */
+    top: auto; /* Remove top positioning */
+    padding-top: 20px; /* Add some padding on top */
+  }
+}
+
+/* For screens smaller than 576px (mobile portrait) */
+@media (max-width: 576px) {
+  .main-body {
+    padding-right: 0; /* Remove padding on small screens */
+    max-width: 100%; /* Full width for main content */
+  }
+  
+  .sidebar {
+    width: 100%; /* Sidebar takes full width on mobile */
+  }
 }

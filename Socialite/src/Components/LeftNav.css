@@ -1,0 +1,128 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar container */
+  .navbar-container {
+    position: relative;
+  }
+  /* Add this to your existing CSS file */
+  /*  */
+
+
+  /* Sidebar */
+  .left-side-nav {
+    width: 250px; /* Fixed width for the sidebar */
+    height: calc(100vh - 60px); /* Full height minus navbar height */
+    background-color: #15202b; /* Sidebar background color */
+    padding: 10px;
+    position: fixed; /* Fix sidebar on the left */
+    top: 60px; /* Position it directly below the navbar */
+    left: 0; /* Align to the left */
+    transition: transform 0.3s ease;
+}
+
+  
+  .left-side-nav .nav-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .left-side-nav .nav-list li {
+    margin-bottom: 10px;
+  }
+  
+  .left-side-nav .nav-list a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .fee{
+    background-color: #334150;
+  
+  }
+  .left-side-nav .nav-list a:hover {
+    background-color: #334150;
+  }
+  
+  .left-side-nav .icon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  #toggle-button a, #see-less a {
+    font-weight: bold;
+  }
+  
+  /* Hamburger menu for mobile */
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .menu-icon .line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+  }
+  
+  .menu-icon.active .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .menu-icon.active .line2 {
+    opacity: 0;
+  }
+  
+  .menu-icon.active .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    /* Hide sidebar by default on small screens */
+    .left-side-nav {
+      position: fixed;
+      left: -100%;
+      top: 0;
+      width: 250px;
+      height: 100vh;
+      transition: transform 0.3s ease;
+    }
+  
+    /* Show sidebar when "open" class is applied */
+    .left-side-nav.open {
+      transform: translateX(100%);
+    }
+  
+    /* Show hamburger menu on small screens */
+    .menu-icon {
+      display: flex;
+      justify-content: flex-start;
+      padding: 10px;
+      background-color: #15202b;
+    }
+  
+    .navbar-container {
+      background-color: #15202b;
+    }
+  }
+  
+  /* General Styles for Smoothness */
+  .navbar-container,
+  .left-side-nav,
+  .nav-list a {
+    transition: all 0.3s ease;
+  }
+  
