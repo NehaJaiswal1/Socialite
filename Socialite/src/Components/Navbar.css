@@ -27,7 +27,9 @@ body, html {
 
 .navbar-logo {
     margin-right: 50px; /* Adds space between logo and search bar */
+    padding: 12px; /* Add padding around the logo */
 }
+
 
 .navbar-search {
     flex: 1; /* Allow search bar to take available space */

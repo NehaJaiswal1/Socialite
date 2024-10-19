@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell, faEnvelope, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faBell, faEnvelope, faUser, faAdd } from '@fortawesome/free-solid-svg-icons';
 import logo from '../assets/images/vidi-logo.png';
 
 const Navbar = () => {
@@ -18,6 +18,7 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-icons">
+        <FontAwesomeIcon icon={faAdd} className="icon" />
         <FontAwesomeIcon icon={faBell} className="icon" />
         <FontAwesomeIcon icon={faEnvelope} className="icon" />
         <FontAwesomeIcon icon={faUser} className="icon" />
