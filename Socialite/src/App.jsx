@@ -1,19 +1,17 @@
 import React from 'react';
 import Navbar from './Components/Navbar';  // Correct import path for Navbar
 import Follow from './Components/Follow';  // Correct import path for Follow'
-import LeftNav from "./Components/LeftNav";
+ 
 import './App.css';
 
 const App = () => {
 
   return (
     <div>
-      <Navbar />
-      
       <div>
-       <LeftNav />
+      <Navbar />
       </div>
-
+    
       <div className="main-content"> {/* Flex container for layout */}
         
         <div className="sidebar"> {/* Sidebar on the right */}

@@ -1,7 +1,7 @@
 /* General styles for navbar */
 body, html {
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     width: 90%; /* Ensure the body is full width */
 }
 
@@ -10,7 +10,7 @@ body, html {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
+    background-color:rgb(35, 31, 49);
     color: white;
     width: 100vw; /* Ensure full viewport width */
     position: fixed; /* Make the navbar fixed at the top */
@@ -28,7 +28,7 @@ body, html {
 .left-side-nav {
     width: 250px; /* Fixed width for the sidebar */
     height: calc(100vh - 60px); /* Full height minus navbar height */
-    background-color: #15202b; /* Sidebar background color */
+    background-color: #3a3e42; /* Sidebar background color */
     padding: 10px;
     position: fixed; /* Fix sidebar on the left */
     top: 60px; /* Position it directly below the navbar */
