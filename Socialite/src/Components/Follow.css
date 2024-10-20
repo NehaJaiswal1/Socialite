@@ -14,7 +14,7 @@ body {
   right: 0; /* Align to the leftmost side */
   top: 80px; /* Adjust top margin if needed */
   z-index: 1000; /* Ensure it appears on top if needed */
-  background-color: rgb(32, 29, 42); /* Optional: background color */
+  background-color: rgb(30 41 59 ); /* Optional: background color */
 }
 
 .container {
