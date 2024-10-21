@@ -32,12 +32,13 @@ body {
 
 /* Sidebar styling */
 .sidebar {
-  width: 340px; /* Fixed width for the sidebar */
+  width: 200px; /* Fixed width for the sidebar */
   height: auto; /* Adjust height to fit content */
-  position: absolute; /* Stick the sidebar to the right */
-  right: 0; /* Sidebar at the rightmost side */
-  top: 20px; /* Adjust top according to the navbar's height */
-  background-color: #4c4c4c; /* Set sidebar background color to gray */
+  position: fixed; /* Stick the sidebar to the right */
+  left: 0; /* Sidebar at the rightmost side */
+  top: 60px; /* Adjust top according to the navbar's height */
+ 
+  background-color: rgb(15 23 42);/* Set sidebar background color to gray */
   border: none; /* Remove border */
 }
 /* Logo styling */

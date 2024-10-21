@@ -1,0 +1,63 @@
+.sidebar {
+    width: 250px;
+    color: white;
+    position: fixed; 
+    top: 64px;
+    left: 0;
+    bottom: 0; 
+    
+    padding: 20px;
+    z-index: 30;
+}
+
+.icon-size {
+    width: 24px; /* Adjust the size of your icons */
+    margin-right: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.sidebar ul li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5%;
+}
+
+/* Aligning the <a> tags and their contents to the left */
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.sidebar button {
+    background-color: #E2E8F0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: rgb(15 23 42);
+    min-height: 100vh;
+}
+
+span {
+    color: white;
+    font-size: medium;
+    font-weight: 600;
+}
