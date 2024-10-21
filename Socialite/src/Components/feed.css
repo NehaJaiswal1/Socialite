@@ -1,0 +1,78 @@
+/* Navbar styling */
+
+  /* Center the feed container */
+  .feed-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; /* Adds space under the navbar */
+  }
+  
+  /* Feed area */
+  .feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; /* Limit the feed width to center the cards */
+    margin: 0 auto;
+  }
+  
+  /* Card styling for each post */
+  .post-card {
+    background-color: #1F2937;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  /* Hover effect on cards */
+  .post-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Post header: Profile pic and name */
+  .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .post-info .name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .post-info .time {
+    font-size: 14px;
+    color: #BDBDBD;
+    margin-top: 4px;
+  }
+  
+  /* Post content */
+  .post-content {
+    margin-top: 15px;
+  }
+  
+  /* Styling for text posts */
+  .post-content p {
+    font-size: 16px;
+  }
+  
+  /* Styling for image posts */
+  .post-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  

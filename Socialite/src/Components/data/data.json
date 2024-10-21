@@ -1,0 +1,46 @@
+
+
+
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "profilePic": "https://randomuser.me/api/portraits/men/1.jpg",
+      "time": "10 mins ago",
+      "postType": "text",
+      "postContent": "Just enjoying a beautiful sunset at the beach!"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "profilePic": "https://randomuser.me/api/portraits/women/2.jpg",
+      "time": "30 mins ago",
+      "postType": "image",
+      "postContent": "https://images.unsplash.com/photo-1605460375648-278bcbd579a6" 
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "profilePic": "https://randomuser.me/api/portraits/women/3.jpg",
+      "time": "1 hour ago",
+      "postType": "text",
+      "postContent": "Had a great workout session this morning! Feeling awesome!"
+    },
+    {
+      "id": 4,
+      "name": "Bob Williams",
+      "profilePic": "https://randomuser.me/api/portraits/men/4.jpg",
+      "time": "2 hours ago",
+      "postType": "image",
+      "postContent": "https://images.unsplash.com/photo-1519337265831-281ec6cc8514"
+    },
+    {
+      "id": 5,
+      "name": "Charlie Brown",
+      "profilePic": "https://randomuser.me/api/portraits/men/5.jpg",
+      "time": "3 hours ago",
+      "postType": "text",
+      "postContent": "Excited to start my new project next week!"
+    }
+  ]
+  
